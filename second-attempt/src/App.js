@@ -1,5 +1,6 @@
 
 import './App.css';
+import AddToList from './toDoList.js';
 
 function App() {
   return (
@@ -7,8 +8,9 @@ function App() {
       <header className="App-header">
         
         <p>
-          ToDo List
+          addTo List
         </p>
+        <AddToList/>
         
 
      
