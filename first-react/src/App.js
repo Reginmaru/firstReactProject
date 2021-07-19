@@ -9,15 +9,15 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Heading />
         <p>
-        The link below will direct you to my Github Account.
+        The link below will direct you to my GitHub Account.
         </p>
         <a
           className="App-link"
-          href="https://github.com/"
+          href="https://github.com/Reginmaru/firstReactProject"
           target="_blank"
           rel="noopener noreferrer"
         >
-          My github
+          This is my GitHub project Repository
         </a>
       </header>
     </div>
