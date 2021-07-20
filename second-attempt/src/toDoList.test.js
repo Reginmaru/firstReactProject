@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import ToDoList from './toDoList'
+import ToDoList from './components/toDoList'
 
-test('adds tasks to list', function(){
+xtest('adds tasks to list', function(){
     render(<ToDolist/>)
     
 })

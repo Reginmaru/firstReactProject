@@ -1,6 +1,6 @@
 
 import './App.css';
-import AddToList from './toDoList.js';
+import AddToList from './components/toDoList.js';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         
         <p>
-          addTo List
+          <h1>My ToDoList</h1>
         </p>
         <AddToList/>
         
