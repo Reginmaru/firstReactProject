@@ -5,20 +5,27 @@ import './ToDoList.css'
 class ToDoList extends Component {
     constructor(props){
         super(props)
+        
         this.state = { tasks: '',
         list: []}
     }
     add = (input) => {
         if( input != ''){
 
-        
         let tempList = this.state.list
         tempList.push(input)
-        this.setState({list :tempList,
-        tasks : ''})}
+
+        this.setState({
+            list :tempList,
+            tasks : ''
+        })}
     }
-    changetask = (input) =>{
+    changetask = (input) => {
         this.setState({ tasks : input})
+
+    }
+    clear = () => {
+        this.setState({ list : []})
 
     }
    
@@ -31,6 +38,8 @@ class ToDoList extends Component {
             onChange = { (e) => this.changetask(e.target.value)}
             />
             <button onClick = { () => this.add(this.state.tasks)} style={{color: 'green'}}>Add</button>
+            <button onClick = { () => this.clear()}style={{color: 'green'}}>clear</button>
+            
 
             <h1 style={{ color: "white" }} >{this.state.list.map( (val) => <li>{val}</li>)}</h1>
             
